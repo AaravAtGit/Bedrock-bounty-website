@@ -61,7 +61,7 @@
                 <h3 class="landing-text">It pays to play.</h3>
                 <h5 class="landing-text">Join And Earn</h5>
                 <a href="#" class="btn btn-dark landing-text ip-field" data-toggle="tooltip" title="Successfully copied IP to clipboard!" style="color: #0890ff;">BedrockBounty.aternos.me</a>
-                <a href="#" class="btn btn-dark landing-text ip-field1" data-toggle="tooltip" title="Successfully copied IP to clipboard!" style="color: #0890ff;">BedrockBountyJava.aternos.me</a>
+                <a href="#" class="btn btn-dark landing-text ip-field2" data-toggle="tooltip" title="Successfully copied IP to clipboard!" style="color: #0890ff;">BedrockBountyJava.aternos.me</a>
                 <p>Click the IP to copy</p>
             </div>
         </section>
@@ -104,8 +104,8 @@
         <section class="join-today" id="join-today">
             <h2>Join today</h2>
             <h3>The First of it's kind, every seen a minecraft server which pays you to play? </h3>
-            <h4>Join our server today at <a href="#about" class="btn btn-dark landing-text ip-field2" data-toggle="tooltip" title="Successfully copied IP to clipboard!" style="color: #0890ff;">BedrockBounty.aternos.me</a>
-                <a href="#" class="btn btn-dark landing-text ip-field3" data-toggle="tooltip" title="Successfully copied IP to clipboard!" style="color: #0890ff;">BedrockBountyJava.aternos.me</a></h4>
+            <h4>Join our server today at <a href="#join-today" class="btn btn-dark landing-text ip-field3" data-toggle="tooltip" title="Successfully copied IP to clipboard!" style="color: #0890ff;">BedrockBounty.aternos.me</a>
+                <a href="#join-today" class="btn btn-dark landing-text ip-field4" data-toggle="tooltip" title="Successfully copied IP to clipboard!" style="color: #0890ff;">BedrockBountyJava.aternos.me</a></h4>
             <p><b>Click the IP address to copy</b></p>
         </section>
         <!-- Join today section ends -->
@@ -281,6 +281,8 @@
         // get the text from the DOM Element: 
         const textToCopy = document.querySelector('.ip-field').innerText
         const textToCopy2 = document.querySelector('.ip-field2').innerText
+        const textToCopy3 = document.querySelector('.ip-field3').innerText
+        const textToCopy4 = document.querySelector('.ip-field4').innerText
 
         // when someone clicks on the <a class="ip-field"> element 
         // (which should be a <button>), execute the copy command:
@@ -312,8 +314,8 @@
                 )
             })
 
-            document.querySelector('.ip-field2').addEventListener('click' , ()=> {
-                navigator.clipboard.writeText(textToCopy2).then(
+            document.querySelector('.ip-field3').addEventListener('click' , ()=> {
+                navigator.clipboard.writeText(textToCopy3).then(
                     function() {
                     //Successfully copied to clipboard
                     hideTooltip(); ///Calls the function to hide the tooltip
@@ -325,8 +327,8 @@
                 )
             })
 
-                    document.querySelector('.ip-field3').addEventListener('click' , ()=> {
-                navigator.clipboard.writeText(textToCopy2).then(
+                    document.querySelector('.ip-field4').addEventListener('click' , ()=> {
+                navigator.clipboard.writeText(textToCopy4).then(
                     function() {
                     //Successfully copied to clipboard
                     hideTooltip(); ///Calls the function to hide the tooltip
